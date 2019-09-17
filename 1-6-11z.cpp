@@ -14,8 +14,8 @@ int main() {
     cin >> e;
     cin >> f;
 
-    x = (b*f - d*e)/(b*c - d*a)
-    y = (e - a*x)/b
+    x = (b*f - d*e)/(b*c - d*a);
+    y = (e - a*x)/b;
 
     cout << x << " " << y << endl;
 }
