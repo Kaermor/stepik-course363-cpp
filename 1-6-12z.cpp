@@ -24,45 +24,63 @@ int main() {
         n = 2;
         x = (e*d - b*f) / (d*a - b*c);
         y = (a*f - e*c) / (d*a - b*c);
+        cout << n << " " << x << " " << y << endl;
+        return 0;
     }
     else if (Dx == 0 and Dy == 0){
         if (a == 0 and b == 0 and c == 0 and d ==0){
             if (e != 0 or f != 0){
                 n = 0;
+                cout << n << endl;
+                return 0;
             }
             else {
                 n = 5;
+                cout << n << endl;
+                return 0;
             }
         }
         else if (a == 0 and c == 0){
             if (b != 0) {
                 n = 4;
                 y = e / b;
+                cout << n << " " << y << endl;
+                return 0;
             }
             else {
                 n = 4;
                 y = f / d;
+                cout << n << " " << y << endl;
+                return 0;
             }
         }
         else if (b == 0 and d == 0) {
             if (a != 0) {
                 n = 3;
                 x = e / a;
+                cout << n << " " << x << endl;
+                return 0;
             }
             else {
                 n = 3;
                 x = f / c;
+                cout << n << " " << x << endl;
+                return 0;
             }
         }
         else if (b != 0) {
             n = 1;
             kn = e / b;
             kk = -a / b;
+            cout << n << " " << kk << " " << kn << endl;
+            return 0;
         }
         else {
             n = 1;
             kn = f / d;
             kk = -c / d;
+            cout << n << " " << kk << " " << kn << endl;
+            return 0;
         }
     }
 
