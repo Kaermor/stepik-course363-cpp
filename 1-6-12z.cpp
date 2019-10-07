@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main() {
+int foo_1_6_12z() {
 
     double a, b, c, d, e, f, x, y, D, Dx, Dy, kn, kk;
     int n;
@@ -96,7 +96,7 @@ int main() {
     else {
         n = 0;
         cout << n << endl;
-        return 0;
+        //return 0;
     }
 }
 

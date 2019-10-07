@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-int main() {
+int foo_1_6_11z() {
 
     double a, b, c, d, e, f, x, y;
 
