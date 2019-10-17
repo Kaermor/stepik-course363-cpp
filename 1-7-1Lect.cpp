@@ -19,16 +19,18 @@ void foo_1_7_1Lect(){
         }
     }
     //processing
-    int num_min = 0;
-    for (int i = 0; i < a.size(); i++) {
-        if(a[i] < a[num_min]){
-            num_min = i;
+    for (int j = 0; j < n; j++) {
+        int num_min = j;
+        for (int i = j; i < a.size(); i++) {
+            if (a[i] < a[num_min]) {
+                num_min = i;
+            }
         }
+        int temp;
+        temp = a[j];
+        a[j] = a[num_min];
+        a[num_min] = temp;
     }
-    int temp;
-    temp = a[0];
-    a[0] = a[num_min];
-    a[num_min] = temp;
     //output
     for (auto now : a){
          cout << now << " ";
