@@ -18,8 +18,20 @@ void foo_1_7_1Lect(){
             a.push_back(temp);
         }
     }
-    //output
-    for (int i = a.size() - 1; i >= 0; i--) {
-        cout << a[i] << " ";
+    //processing
+    int num_min = 0;
+    for (int i = 0; i < a.size(); i++) {
+        if(a[i] < a[num_min]){
+            num_min = i;
+        }
     }
+    int temp;
+    temp = a[0];
+    a[0] = a[num_min];
+    a[num_min] = temp;
+    //output
+    for (auto now : a){
+         cout << now << " ";
+    }
+
 }
