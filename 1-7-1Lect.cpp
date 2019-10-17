@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int foo_1_7_1Lect(){
+void foo_1_7_1Lect(){
     int n;
     cin >> n;
     vector <int> a;
