@@ -6,6 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(stepik_course363_cpp
-        1-6-12z.cpp
-        1-6-12z.h
-        OsnCPP_main.cpp 1-7-7z.cpp 1-7-7z.h)
+        OsnCPP_main.cpp 1-7-9z.cpp 1-7-9z.h)
