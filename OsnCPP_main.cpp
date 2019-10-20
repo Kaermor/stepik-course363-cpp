@@ -2,10 +2,10 @@
 // Created by grey on 07.10.2019.
 //
 
-#include "1-7-10z.h"
+#include "1-7-11z.h"
 
 int main()
 {
-    foo_1_7_10z();
+    foo_1_7_11z();
     return 0;
 }
