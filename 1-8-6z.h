@@ -1,0 +1,4 @@
+#ifndef STEPIK_COURSE363_CPP_1_8_6Z_H
+#define STEPIK_COURSE363_CPP_1_8_6Z_H
+void foo_1_8_6z();
+#endif //STEPIK_COURSE363_CPP_1_8_6Z_H
