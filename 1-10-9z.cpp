@@ -10,49 +10,28 @@
 using namespace std;
 
 void foo_1_10_9z(){
-//new variant char by char
-//    string s, s1;
-//    int cnt = 0, sig = 0;
-//    int okt;
-//    char c;
-//    getline(cin, s);
-//    s = s + '.';
-//    okt = stoi
-//    for (int i = 0; i < ; ++i) {
-//
-//    }
-//    cout << cnt << " " << sig << endl;
-//    if (cnt != 4 || sig == 1){
-//        cout << "NO";
-//    }
-//    else{
-//        cout << "YES";
-
-
-
-//    old
     string s, s1;
     int cnt = 0, sig = 0;
     int okt=0;
     getline(cin, s);
-    s = s + '.';
+    s = s + '.'; // additional point
     cout << s << endl;
-    stringstream ss(s);
-    while (getline(ss, s1, '.')){
+    stringstream ss(s); //new stream
+    while (getline(ss, s1, '.')){ //split by dot
 //        cout << "s1 = " << s1 << endl;
 //        cout << "s1.length() = " << s1.length() << endl;
-        if (s1.length() ==0 || s1.length() > 3){
+        if (s1.length() ==0 || s1.length() > 3){ //limitation of length of substr
             sig = 1;
             break;
         }
         ++cnt;
-        for (auto c:s1){
+        for (auto c:s1){ //each simbol check in substr
             if (c < '0' || c > '9'){
                 sig = 1;
                 break;
             }
         }
-        if(sig != 1){
+        if(sig != 1){ //substr to int
             okt = stoi(s1, 0, 10);
         }
         else{
@@ -60,7 +39,7 @@ void foo_1_10_9z(){
         }
 //
 //        cout << "stoi(s1) = " << okt << endl;
-        if (okt < 0 || okt > 255){
+        if (okt < 0 || okt > 255){ //check of oktet value
             sig = 1;
             break;
         }
@@ -70,7 +49,7 @@ void foo_1_10_9z(){
 
     }
 //    cout << cnt << " " << sig << endl;
-    if (cnt != 4 || sig == 1){
+    if (cnt != 4 || sig == 1){ //output
         cout << "NO";
     }
     else{
