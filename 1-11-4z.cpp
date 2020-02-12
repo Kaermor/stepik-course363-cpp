@@ -20,5 +20,4 @@ void foo_1_11_4z(){
         }
         s.insert(x);
     }
-
 }
